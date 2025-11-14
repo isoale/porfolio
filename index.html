@@ -2,36 +2,643 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>Alejandro Appendino - Portafolio</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Appendino - Portafolio Profesional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header -->
+    <header id="top">
+        <div class="container header-content">
+            <img src="https://drive.google.com/uc?export=view&id=alejandro-appendino-foto.jpg" alt="Foto de Alejandro Appendino">
+            <h1>Alejandro Appendino</h1>
+            <p>Docente en Informática — Innovación, Robótica, Inteligencia Artificial y Sustentabilidad</p>
+            <div class="header-badge">
+                <i class="fas fa-award"></i> Especialista en IA, Drones y Tecnología Educativa
+            </div>
+        </div>
+    </header>
 
-<header>
-    <img id="profile-img" alt="Foto perfil">
-    <h1>Alejandro Appendino</h1>
-    <p>Docente – IA – Drones – Tecnología Educativa</p>
-</header>
+    <!-- Botón flotante -->
+    <a href="#top" class="floating-button">
+        <i class="fas fa-arrow-up"></i> Ir arriba
+    </a>
 
-<h2>Proyectos</h2>
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
 
-<div class="projects-grid">
-    <div class="project-card"><h3>Destacado 1</h3><button class="info-btn" data-project="destacado-1">Ver imagen</button></div>
-    <div class="project-card"><h3>Destacado 2</h3><button class="info-btn" data-project="destacado-2">Ver imagen</button></div>
-    <div class="project-card"><h3>Personal 1</h3><button class="info-btn" data-project="personal-1">Ver imagen</button></div>
-    <div class="project-card"><h3>Educativo 3</h3><button class="info-btn" data-project="educativo-3">Ver imagen</button></div>
-    <div class="project-card"><h3>Comunitario 5</h3><button class="info-btn" data-project="comunitario-5">Ver imagen</button></div>
-</div>
+    <!-- Sobre mí -->
+    <section id="sobremi">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre mí</h2>
+                <p>Docente especializado en tecnología con más de 10 años de experiencia en proyectos innovadores</p>
+            </div>
 
-<!-- Modal -->
-<div id="imageModal">
-    <span class="close">&times;</span>
-    <img id="modalImage">
-</div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Soy docente de informática con amplia trayectoria en proyectos de robótica educativa, inteligencia artificial aplicada y soluciones sustentables. Integro prácticas de laboratorio, impresión 3D, drones para mapeo, y herramientas de automatización (n8n, ESP32, Kivy) para resolver problemas reales en escuelas y la comunidad.</p>
+                    <p>He coordinado y participado en proyectos presentados en el Presupuesto Participativo de La Carlota y en concursos educativos, obteniendo reconocimientos por innovaciones en monitoreo de suelos y energías renovables. Actualmente me encuentro cursando la Diplomatura en Inteligencia Artificial en la Universidad Nacional de Río Cuarto.</p>
+                </div>
 
-<script src="script.js"></script>
+                <div class="about-details">
+                    <h3>Información personal</h3>
+                    <ul class="detail-list">
+                        <li>
+                            <div class="detail-label">Nombre:</div>
+                            <div>Appendino, Alejandro Antonio</div>
+                        </li>
+                        <li>
+                            <div class="detail-label">Contacto:</div>
+                            <div>isoale@gmail.com<br>alejandro.appendino@me.cba.gov.ar</div>
+                        </li>
+                        <li>
+                            <div class="detail-label">Teléfono:</div>
+                            <div>03585-15138586</div>
+                        </li>
+                        <li>
+                            <div class="detail-label">Ubicación:</div>
+                            <div>La Carlota, Córdoba, Argentina</div>
+                        </li>
+                        <li>
+                            <div class="detail-label">Formación:</div>
+                            <div>Analista Programador / Analista en Sistemas de Computación</div>
+                        </li>
+                        <li>
+                            <div class="detail-label">Especialización:</div>
+                            <div>Diplomatura en Inteligencia Artificial (en curso)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia">
+        <div class="container">
+            <div class="section-title">
+                <h2>Experiencia Profesional y Docente</h2>
+                <p>Más de 10 años de experiencia combinando docencia y desarrollo tecnológico</p>
+            </div>
+
+            <div class="experience-container">
+                <div class="experience-category">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Docencia</h3>
+                    <ul class="experience-list">
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Profesor de Educación Tecnológica</h4>
+                                <p>IPET N°100 "María Benita Arias"</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Profesor de Laboratorio de Informática</h4>
+                                <p>IPEA N°213 "Ing. Lorenzo Parodi"</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Capacitador</h4>
+                                <p>Programa INET: Auxiliar de Informático Profesional</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Capacitador</h4>
+                                <p>Programa Aulas Talleres Móviles (ATM)</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Coordinador</h4>
+                                <p>GAME JAM 2016 (Desarrollo de videojuegos educativos)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-category">
+                    <h3><i class="fas fa-laptop-code"></i> Área Técnica</h3>
+                    <ul class="experience-list">
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Administrador de Redes</h4>
+                                <p>Programa Conectar Igualdad – Ministerio de Educación de Córdoba</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Especialista en Impresión 3D</h4>
+                                <p>Diseño, calibración y mantenimiento de impresoras</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Operador y Programador de Vuelos con Drones</h4>
+                                <p>Monitoreo, mapeo y análisis</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-circle"></i>
+                            <div class="experience-details">
+                                <h4>Participante en Humanitarian OpenStreetMap Team (HOT)</h4>
+                                <p>Mapeo colaborativo en emergencias</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mis Proyectos</h2>
+                <p>Una selección de proyectos personales, educativos y comunitarios desarrollados</p>
+            </div>
+
+            <!-- Proyectos Destacados -->
+            <div class="project-category">
+                <div class="cat-header">
+                    <h3>Proyectos Destacados y Ganadores</h3>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card winner-border">
+                        <div class="ribbon">GANADOR 2025</div>
+                        <div class="project-content">
+                            <h4>Instalación de Paneles Solares en Dispensarios — La Carlota</h4>
+                            <p>Proyecto seleccionado en el Presupuesto Participativo 2025. Implementación de sistemas solares fotovoltaicos en dispensarios locales para energía limpia y ahorro energético.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="destacado-1"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card winner-border">
+                        <div class="ribbon">GANADOR 2025</div>
+                        <div class="project-content">
+                            <h4>Sistema de Vigilancia Inteligente (10 Cámaras) — La Carlota</h4>
+                            <p>Proyecto seleccionado y actualmente en ejecución. Implementa cámaras de seguridad con audio y transmisión en tiempo real para fortalecer la seguridad urbana.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="destacado-2"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card winner-border">
+                        <div class="ribbon">PRIMER PREMIO 2023</div>
+                        <div class="project-content">
+                            <h4>Monitoreo de Suelos y Cultivos — IPEA N°213</h4>
+                            <p>Ganador del concurso CampoTEC Cadena 3 (2023) — Proyecto innovador de sensores agrícolas para monitoreo de suelos y cultivos en escuelas rurales.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/rh8qhw-GAoc" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="destacado-3"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card winner-border">
+                        <div class="ribbon">DESTACADO 2025</div>
+                        <div class="project-content">
+                            <h4>Sistema de Energía Renovable — IPET 100 María Benita Arias</h4>
+                            <p>Proyecto destacado en el Concurso Escuelas Sustentables 2025. Maqueta con aerogeneradores verticales y postes solares impresos en 3D.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/_3yHh8PXOo4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="destacado-4"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proyectos Personales -->
+            <div class="project-category">
+                <div class="cat-header">
+                    <h3>Proyectos Personales</h3>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Robot Cortacésped Autónomo</h4>
+                            <p>Robot controlado por ESP32 con navegación por cuadrícula, sensores ultrasónicos y retorno automático al punto de inicio. Integración con app Kivy para control manual y automático.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="personal-1"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Asistente IA para Bomberos</h4>
+                            <p>Sistema de visión por computadora para detectar fuego, humo y personas en imágenes tomadas por drones; genera coordenadas y distancias para apoyo en emergencias.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="personal-2"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Agente Inteligente de Obras (n8n)</h4>
+                            <p>Agente y flujos en n8n para automatizar la gestión de obras: carga, materiales, personal, cronogramas y reportes (integración con Google Drive y Sheets).</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="personal-3"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Hoteles para Insectos y Colmena Urbana 3D</h4>
+                            <p>Diseño y fabricación con impresión 3D de refugios para insectos beneficiosos y mini-colmenas urbanas, promoviendo biodiversidad y educación comunitaria.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="personal-4"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Herramienta de Detección de Objetos con IA (HTML)</h4>
+                            <p>Ejemplo didáctico de IA embebida en una página web para identificar objetos en imágenes con modelos preentrenados.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="personal-5"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Fotogrametría y Modelado 3D (drone)</h4>
+                            <p>Reconstrucción 3D a partir de fotografías aéreas — uso educativo y para documentar proyectos escolares.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/rR5_LkV9Hr4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="personal-6"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proyectos Educativos -->
+            <div class="project-category">
+                <div class="cat-header">
+                    <h3>Proyectos Educativos (Secundarios Técnicos)</h3>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Robot Modular con Impresión 3D — IPET N°100</h4>
+                            <p>Diseño de robot didáctico y modular para talleres técnicos; piezas impresas en 3D y programación para distintas funciones educativas.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="educativo-1"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Sembradora 3D para Huerta Escolar — IPEA N°213</h4>
+                            <p>Sembradora prototipo impresa en 3D creada por estudiantes para optimizar la siembra en la huerta escolar.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/CmBSRaOW7dQ" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="educativo-2"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Medidor de Altura Automático — IPET N°100</h4>
+                            <p>Dispositivo electrónico para medir la altura de pacientes de forma rápida y sin contacto, pensado para el hospital pediátrico.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="educativo-3"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>EcoEscuela — IPET N°100 "María Benita Arias"</h4>
+                            <p>Proyecto de maqueta sustentable con aerogeneradores y postes solares imprimidos en 3D; fomenta educación en energías renovables.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/_3yHh8PXOo4" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="educativo-4"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Prensa para Quesos Artesanales — IPET N°100</h4>
+                            <p>Equipo técnico para elaboración artesanal como propuesta formativa y productiva local.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="educativo-5"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Prototipo de Robot Asistente para Silla de Ruedas — #Benita100</h4>
+                            <p>Prototipo orientado a accesibilidad y asistencia motora.</p>
+                            <div class="project-links">
+                                <a href="https://www.youtube.com/watch?v=ru-imrhG0rs" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="educativo-6"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Embellecer Nuestra Escuela - IPEA 213</h4>
+                            <p>Replantación de árboles tras una tormenta que causó daños, fomentando la conciencia ambiental y el sentido de pertenencia.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="educativo-7"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Producción de Plantines por Esquejes — IPEA N°213</h4>
+                            <p>Desarrollo sustentable para prácticas agrícolas escolares.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="educativo-8"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Recuperación de Suelos para Agricultura Sostenible — IPEA N°213</h4>
+                            <p>Prácticas y protocolos para mejorar la salud del suelo y la productividad.</p>
+                            <div class="project-links">
+                                <a href="https://youtu.be/rh8qhw-GAoc" target="_blank"><i class="fas fa-video"></i> Video</a>
+                                <a href="#" class="info-btn" data-project="educativo-9"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Proyectos Comunitarios -->
+            <div class="project-category">
+                <div class="cat-header">
+                    <h3>Proyectos Comunitarios / Presupuesto Participativo</h3>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>App de Comunicación, Planificación y Reclamos</h4>
+                            <p>Aplicación + dashboard para que vecinos reporten incidencias (foto + ubicación), guarden pendientes y se calcule la ruta más óptima de búsqueda.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-1"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Iluminación Pública Eficiente y Conectada</h4>
+                            <p>Instalación de 140 luminarias LED autosustentables con paneles solares y sensores de movimiento para mejorar seguridad y ahorro energético.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-2"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Estaciones de Recarga para Vehículos Eléctricos</h4>
+                            <p>Red de puntos de recarga para impulsar movilidad eléctrica y sostener la transición energética local.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-3"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Red de Micro-redes de Energía Renovable</h4>
+                            <p>Diseño e implementación de micro-redes (solar/eólica) en edificios públicos críticos para mantener servicios durante cortes.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-4"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Programa de Reforestación y Parques de Captación de CO₂</h4>
+                            <p>Reforestación con especies autóctonas y jardines sensoriales, cartelería educativa y QR informativos para promover biodiversidad y educación ambiental.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-5"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Laboratorio de Innovación en IA (y versión para Bomberos)</h4>
+                            <p>Espacio equipado con drones, sensores y herramientas para experimentación en IA, prevención de incendios y transferencia de tecnología a otras comunidades.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-6"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Instalación de Vetiver en Piletas de Saneamiento</h4>
+                            <p>Filtro vegetal natural en piletas cloacales para absorber contaminantes y generar subproductos ecológicos.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-7"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Oasis Urbano "Transformación Verde"</h4>
+                            <p>Creación de espacios verdes sensoriales e inclusivos con especies aromáticas y autóctonas.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-8"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Capacitación en Impresión 3D "Biblioteca una nueva mirada"</h4>
+                            <p>Formación en diseño y manufactura digital con fines educativos y sociales.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-9"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Creación de Ladrillos con Basura</h4>
+                            <p>Proyecto de economía circular para convertir residuos en materiales de construcción.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-10"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Ciudad Inteligente y Segura (Ciber Ciudad 4.0)</h4>
+                            <p>Integración de energía solar, conectividad WiFi y sistemas híbridos en dependencias públicas.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-11"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Sistema de Vigilancia Portátil Autónomo</h4>
+                            <p>Cámaras con energía solar y transmisión en tiempo real para control urbano.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-12"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Semáforos Inteligentes para Peatones</h4>
+                            <p>Dispositivos con alerta lumínica y sonora para cruces escolares.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-13"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Limitadores de Velocidad Generadores de Energía</h4>
+                            <p>Reductores que transforman el movimiento de vehículos en energía eléctrica.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-14"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Competición "Reclutamiento de Talentos" en Minetest</h4>
+                            <p>Simulación virtual de la ciudad de La Carlota — detección de talentos tecnológicos.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-15"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Uso de Drones para Mapeo y Reforestación</h4>
+                            <p>Mapeo de zonas vulnerables y siembra con drones en áreas de difícil acceso.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-16"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Repositorio de Cursos Prácticos</h4>
+                            <p>Plataforma con cursos avalados y tutores para oficios prácticos.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-17"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h4>Laboratorio de Innovación en IA (Bomberos)</h4>
+                            <p>Plataforma de análisis predictivo de incendios, mapeo de riesgos y entrenamiento digital.</p>
+                            <div class="project-links">
+                                <a href="#" class="info-btn" data-project="comunitario-18"><i class="fas fa-info-circle"></i> Info</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Contacto</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>isoale@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alejandro.appendino@me.cba.gov.ar</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>03585-15138586</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>La Carlota, Córdoba, Argentina</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@alejandroappendino" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Alejandro Appendino — Portafolio Profesional</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
