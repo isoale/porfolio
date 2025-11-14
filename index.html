@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Alejandro Appendino - Portafolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img id="profile-img" alt="Foto perfil">
+    <h1>Alejandro Appendino</h1>
+    <p>Docente – IA – Drones – Tecnología Educativa</p>
+</header>
+
+<h2>Proyectos</h2>
+
+<div class="projects-grid">
+    <div class="project-card"><h3>Destacado 1</h3><button class="info-btn" data-project="destacado-1">Ver imagen</button></div>
+    <div class="project-card"><h3>Destacado 2</h3><button class="info-btn" data-project="destacado-2">Ver imagen</button></div>
+    <div class="project-card"><h3>Personal 1</h3><button class="info-btn" data-project="personal-1">Ver imagen</button></div>
+    <div class="project-card"><h3>Educativo 3</h3><button class="info-btn" data-project="educativo-3">Ver imagen</button></div>
+    <div class="project-card"><h3>Comunitario 5</h3><button class="info-btn" data-project="comunitario-5">Ver imagen</button></div>
+</div>
+
+<!-- Modal -->
+<div id="imageModal">
+    <span class="close">&times;</span>
+    <img id="modalImage">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
